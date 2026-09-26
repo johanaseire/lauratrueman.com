@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<!-- 1. GLightbox CSS (Include in header/top of file) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
 <style>
   .artist-header {
     text-align: center;
@@ -24,6 +27,7 @@ layout: default
     object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
+    cursor: pointer;
   }
   .artwork-card img:hover {
     transform: scale(1.02);
@@ -59,7 +63,16 @@ layout: default
 <div class="gallery-grid">
   {% for item in site.data.gallery %}
     <div class="artwork-card">
-      <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" loading="lazy" />
+      <!-- Wrap image in a lightbox link with data attributes for title and description -->
+      <a 
+        href="{{ item.image | relative_url }}" 
+        class="glightbox" 
+        data-title="{{ item.title }} ({{ item.year }})" 
+        data-description="{{ item.medium }} — {{ item.status }}"
+      >
+        <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" loading="lazy" />
+      </a>
+      
       <div class="artwork-info">
         <h2 class="artwork-title">{{ item.title }} ({{ item.year }})</h2>
         <div class="artwork-meta">{{ item.medium }}</div>
@@ -68,3 +81,15 @@ layout: default
     </div>
   {% endfor %}
 </div>
+
+<!-- 2. GLightbox JS and Initialization (Bottom of file) -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    zoomable: true
+  });
+</script>
+
