@@ -1,0 +1,6 @@
+title: "Laura Trueman — Fine Art & Paintings"
+description: "Original oil and acrylic works by Laura Trueman"
+theme: minima # Uses GitHub Pages' built-in responsive theme
+markdown: kramdown
+plugins:
+  - jekyll-feed

@@ -1,0 +1,11 @@
+- title: "Donkey"
+  year: "2026"
+  medium: "Oil on canvas, 24x36 in"
+  image: "/assets/images/donkey.jpg"
+  status: "Available"
+
+- title: "Red Boat"
+  year: "2025"
+  medium: "Oil on canvas, 24x36 in"
+  image: "/assets/images/red_boat.jpg"
+  status: "Sold"
