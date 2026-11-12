@@ -4,3 +4,4 @@ theme: minima # Uses GitHub Pages' built-in responsive theme
 markdown: kramdown
 plugins:
   - jekyll-feed
+instagram_username: lauratruemanart
