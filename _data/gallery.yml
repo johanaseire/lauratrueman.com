@@ -9,3 +9,33 @@
   medium: "Oil on canvas, 24x36 in"
   image: "/assets/images/red_boat.jpg"
   status: "Sold"
+
+- title: "Rapprochement"
+  year: "2026"
+  medium: "Oil on canvas, 24x36 in"
+  image: "/assets/images/lighthouse01.png"
+  status: "Available"
+
+- title: "Revelation"
+  year: "2026"
+  medium: "Oil on canvas, 30×40cms"
+  image: "/assets/images/river01.png"
+  status: Available
+
+- title: "Dead and Alive"
+  year: "2025"
+  medium: "Oil on canvas, 20×25 cms"
+  image: "/assets/images/crossing01.png"
+  status: Available
+
+- title: "Stay for Something"
+  year: "2025"
+  medium: "Oil on canvas, 30 × 30cms"
+  image: "/assets/images/mountain01.png"
+  status: Available
+
+- title: "After Paul Henry - A Connemara Village"
+  year: "2026"
+  medium: "Oil on canvas, 25 × 35 cms"
+  image: "/assets/images/mountain02.jpg"
+  status: Available
